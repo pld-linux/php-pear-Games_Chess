@@ -1,5 +1,3 @@
-# ToDo:
-# - pl summary/description
 %include	/usr/lib/rpm/macros.php
 %define         _class          Games
 %define         _subclass       Chess
@@ -7,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - Construct and validate a logical chess game, does not display
-#Summary(pl):	%{_pearname} -
+Summary(pl):	%{_pearname} - Konstruowanie i sprawdzanie poprawno¶ci logicznej gry w szachy
 Name:		php-pear-%{_pearname}
 Version:	0.3
 Release:	1
@@ -36,10 +34,20 @@ the stability will increase.
 
 This class has in PEAR status: %{_status}.
 
-#%description -l pl
-#...
-#
-#Ta klasa ma w PEAR status: %{_status}.
+%description -l pl
+Ten modu³ obs³uguje logikê obs³ugi szachownicy i analizy standardu
+notacji FEN (Farnsworth-Edwards Notation) do opisu pozycji, a tak¿e
+notacji SAN (Standard Algebraic Notation) do opisu poszczególnych
+ruchów. Klasa mo¿e byæ u¿ywana jako backend do gry w szachy lub do
+sprawdzania poprawno¶ci albo tworzenia plików PGN przy u¿yciu pakietu
+File_ChessPGN.
+
+Mimo ¿e ten pakiet jest w stanie alpha, jest w pe³ni przetestowany.
+Kod dzia³a, ale API jest nie ustabilizowane i mo¿e siê zmieniæ
+drastycznie, je¶li znajd± siê ku temu powody. Kiedy API siê
+ustabilizuje, zwiêkszy siê stabilno¶æ ca³ej klasy.
+
+Ta klasa ma w PEAR status: %{_status}.
 
 %prep
 %setup -q -c
