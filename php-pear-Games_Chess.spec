@@ -32,7 +32,7 @@ works, but the API is fluid, and may change dramatically as it is put
 into use and better ways are found to use it. When the API stabilizes,
 the stability will increase.
 
-This class has in PEAR status: %{_status}.
+In PEAR status of this package is: %{_status}.
 
 %description -l pl
 Ten modu³ obs³uguje logikê obs³ugi szachownicy i analizy standardu
