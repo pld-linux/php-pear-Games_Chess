@@ -1,11 +1,11 @@
 %include	/usr/lib/rpm/macros.php
-%define         _class          Games
-%define         _subclass       Chess
+%define		_class		Games
+%define		_subclass	Chess
 %define		_status		alpha
 %define		_pearname	%{_class}_%{_subclass}
 
-Summary:	%{_pearname} - Construct and validate a logical chess game, does not display
-Summary(pl):	%{_pearname} - Konstruowanie i sprawdzanie poprawno¶ci logicznej gry w szachy
+Summary:	%{_pearname} - construct and validate a logical chess game, does not display
+Summary(pl):	%{_pearname} - konstruowanie i sprawdzanie poprawno¶ci logicznej gry w szachy
 Name:		php-pear-%{_pearname}
 Version:	0.6
 Release:	0.alpha
