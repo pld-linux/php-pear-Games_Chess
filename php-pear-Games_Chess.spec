@@ -7,12 +7,12 @@
 Summary:	%{_pearname} - construct and validate a logical chess game, does not display
 Summary(pl):	%{_pearname} - konstruowanie i sprawdzanie poprawno¶ci logicznej gry w szachy
 Name:		php-pear-%{_pearname}
-Version:	0.8.1
-Release:	3
+Version:	0.9.0
+Release:	1
 License:	PHP 3.0
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	e4cc13476fa86e53038eec658039c6ac
+# Source0-md5:	113d29fe28e965212668acb57f8cef8f
 URL:		http://pear.php.net/package/Games_Chess/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
