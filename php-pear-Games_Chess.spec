@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - construct and validate a logical chess game, does not display
-Summary(pl):	%{_pearname} - konstruowanie i sprawdzanie poprawno¶ci logicznej gry w szachy
+Summary(pl.UTF-8):   %{_pearname} - konstruowanie i sprawdzanie poprawnoÅ›ci logicznej gry w szachy
 Name:		php-pear-%{_pearname}
 Version:	0.9.1
 Release:	1
@@ -41,24 +41,24 @@ the stability will increase.
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Ten modu³ obs³uguje logikê obs³ugi szachownicy i analizy standardu
-notacji FEN (Farnsworth-Edwards Notation) do opisu pozycji, a tak¿e
-notacji SAN (Standard Algebraic Notation) do opisu poszczególnych
-ruchów. Klasa mo¿e byæ u¿ywana jako backend do gry w szachy lub do
-sprawdzania poprawno¶ci albo tworzenia plików PGN przy u¿yciu pakietu
+%description -l pl.UTF-8
+Ten moduÅ‚ obsÅ‚uguje logikÄ™ obsÅ‚ugi szachownicy i analizy standardu
+notacji FEN (Farnsworth-Edwards Notation) do opisu pozycji, a takÅ¼e
+notacji SAN (Standard Algebraic Notation) do opisu poszczegÃ³lnych
+ruchÃ³w. Klasa moÅ¼e byÄ‡ uÅ¼ywana jako backend do gry w szachy lub do
+sprawdzania poprawnoÅ›ci albo tworzenia plikÃ³w PGN przy uÅ¼yciu pakietu
 File_ChessPGN.
 
-Mimo ¿e ten pakiet jest w stanie alpha, jest w pe³ni przetestowany.
-Kod dzia³a, ale API jest nie ustabilizowane i mo¿e siê zmieniæ
-drastycznie, je¶li znajd± siê ku temu powody. Kiedy API siê
-ustabilizuje, zwiêkszy siê stabilno¶æ ca³ej klasy.
+Mimo Å¼e ten pakiet jest w stanie alpha, jest w peÅ‚ni przetestowany.
+Kod dziaÅ‚a, ale API jest nie ustabilizowane i moÅ¼e siÄ™ zmieniÄ‡
+drastycznie, jeÅ›li znajdÄ… siÄ™ ku temu powody. Kiedy API siÄ™
+ustabilizuje, zwiÄ™kszy siÄ™ stabilnoÅ›Ä‡ caÅ‚ej klasy.
 
 Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl):	Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 AutoReq:	no
@@ -67,7 +67,7 @@ AutoProv:	no
 %description tests
 Tests for PEAR::%{_pearname}.
 
-%description tests -l pl
+%description tests -l pl.UTF-8
 Testy dla PEAR::%{_pearname}.
 
 %prep
