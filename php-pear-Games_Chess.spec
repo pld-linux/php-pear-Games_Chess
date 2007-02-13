@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - construct and validate a logical chess game, does not display
-Summary(pl.UTF-8):   %{_pearname} - konstruowanie i sprawdzanie poprawności logicznej gry w szachy
+Summary(pl.UTF-8):	%{_pearname} - konstruowanie i sprawdzanie poprawności logicznej gry w szachy
 Name:		php-pear-%{_pearname}
 Version:	0.9.1
 Release:	1
@@ -58,7 +58,7 @@ Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 AutoReq:	no
