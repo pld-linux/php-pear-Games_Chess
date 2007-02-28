@@ -1,19 +1,19 @@
 %include	/usr/lib/rpm/macros.php
 %define		_class		Games
 %define		_subclass	Chess
-%define		_status		alpha
+%define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - construct and validate a logical chess game, does not display
 Summary(pl.UTF-8):	%{_pearname} - konstruowanie i sprawdzanie poprawności logicznej gry w szachy
 Name:		php-pear-%{_pearname}
-Version:	0.9.1
+Version:	1.0.0
 Release:	1
 Epoch:		0
 License:	PHP 3.0
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	3d2a76887e0ec19174821e1a4a7876d8
+# Source0-md5:	230c04eb5539c1f65228c321bba29dba
 URL:		http://pear.php.net/package/Games_Chess/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
