@@ -1,14 +1,11 @@
-%include	/usr/lib/rpm/macros.php
-%define		_class		Games
-%define		_subclass	Chess
 %define		_status		stable
-%define		_pearname	%{_class}_%{_subclass}
-
+%define		_pearname	Games_Chess
+%include	/usr/lib/rpm/macros.php
 Summary:	%{_pearname} - construct and validate a logical chess game, does not display
 Summary(pl.UTF-8):	%{_pearname} - konstruowanie i sprawdzanie poprawności logicznej gry w szachy
 Name:		php-pear-%{_pearname}
 Version:	1.0.1
-Release:	3
+Release:	4
 Epoch:		0
 License:	PHP 3.0
 Group:		Development/Languages/PHP
@@ -18,14 +15,14 @@ URL:		http://pear.php.net/package/Games_Chess/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
-Requires:	php-common >= 3:4.2.0
+Requires:	php(core) >= 4.2.0
 Requires:	php-pear
 Obsoletes:	php-pear-Games_Chess-tests
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 # included in tests
-%define		_noautoreq 'pear(HTML_TestListener.php)' 'pear(TestUnit.php)'
+%define		_noautoreq pear(HTML_TestListener.php) pear(TestUnit.php)
 
 %description
 The logic of handling a chessboard and parsing standard FEN
@@ -75,6 +72,6 @@ rm -rf $RPM_BUILD_ROOT
 %doc install.log
 %doc docs/%{_pearname}/examples
 %{php_pear_dir}/.registry/*.reg
-%dir %{php_pear_dir}/%{_class}
-%{php_pear_dir}/%{_class}/*.php
-%{php_pear_dir}/%{_class}/%{_subclass}
+%dir %{php_pear_dir}/Games
+%{php_pear_dir}/Games/*.php
+%{php_pear_dir}/Games/Chess
