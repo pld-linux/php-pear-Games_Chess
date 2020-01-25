@@ -1,6 +1,5 @@
 %define		_status		stable
 %define		_pearname	Games_Chess
-%include	/usr/lib/rpm/macros.php
 Summary:	%{_pearname} - construct and validate a logical chess game, does not display
 Summary(pl.UTF-8):	%{_pearname} - konstruowanie i sprawdzanie poprawności logicznej gry w szachy
 Name:		php-pear-%{_pearname}
